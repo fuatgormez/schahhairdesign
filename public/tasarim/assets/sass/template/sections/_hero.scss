@@ -1,0 +1,396 @@
+.ls-v6 {
+
+  [class*="ls-gui-element ls-nav-"] {
+    @include equal-size(80px);
+    z-index: 10000;
+    top: 50%;
+    margin-top: -40px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    color: $titleColor;
+    background-color: #fff;
+    left: 125px;
+    transition: all ease 0.4s;
+
+    @include xl {
+      left: 20px;
+    }
+
+    &:after {
+      content: '\f060';
+      font-family: $iconFont;
+      text-align: center;
+      color: inherit;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 77px;
+      color: inherit;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: $titleColor !important;
+    }
+  }
+
+  .ls-nav-next {
+    left: auto;
+    right: 125px;
+
+    @include xl {
+      right: 20px;
+    }
+
+    &:after {
+      content: '\f061';
+    }
+  }
+
+  &[data-navprevnext-color="primary"] {
+    [class="ls-gui-element ls-nav-"] {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+
+  &[data-navprevnext-color="primary2"] {
+    [class*="ls-gui-element ls-nav-"] {
+      background-color: $primary-color2;
+      color: #fff;
+    }
+  }
+
+  &[data-navprevnext-color="primary3"] {
+    [class*="ls-gui-element ls-nav-"] {
+      background-color: $primary-color3;
+      color: #fff;
+      
+      &:hover {
+        background-color: $primary-color !important;
+      }
+    }
+  }
+
+}
+
+
+.vs-hero-carousel {
+  .ls-bottom-nav-wrapper {
+    .ls-bottom-slidebuttons {
+      bottom: 20px;
+
+      a {
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin-right: 15px;
+        border: 2px solid !important;
+        border-color: transparent !important;
+        text-align: center;
+        margin-left: 0;
+        display: inline-block;
+        z-index: 10000;
+        border-radius: 50%;
+        
+
+        &:last-of-type,
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:before {
+          content: '';
+          @include equal-size(6px);
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          background-color: $primary-color;
+          border-radius: inherit;
+          transition: inherit;
+          margin-top: 6px;
+        }
+
+        &:hover {
+          border-color: transparent ;
+        }
+        
+        &.ls-nav-active {
+          border-color: $primary-color !important;
+        }
+      }
+    }
+  }
+
+  &[data-navbuttons-color="white"] {
+    .ls-bottom-nav-wrapper {
+      .ls-bottom-slidebuttons {
+        a {
+          &:before {
+            background-color: #fff;
+          }
+
+          &.ls-nav-active {
+            border-color: #fff !important;
+          }
+        }
+      }
+    }
+  }
+
+
+  &[data-navbuttons-color="primary2"] {
+    .ls-bottom-nav-wrapper {
+      .ls-bottom-slidebuttons {
+        a {
+          &:before {
+            background-color: $primary-color2;
+          }
+
+          &.ls-nav-active {
+            border-color: $primary-color2 !important;
+          }
+        }
+      }
+    }
+  }
+
+  &[data-navbuttons-color="primary3"] {
+    .ls-bottom-nav-wrapper {
+      .ls-bottom-slidebuttons {
+        a {
+          &:before {
+            background-color: $primary-color3;
+          }
+
+          &.ls-nav-active {
+            border-color: $primary-color3 !important;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.vs-hero-layout1 {
+  z-index: 9;
+
+  .play-btn {
+    color: $primary-color2;
+
+    &:hover {
+      background-color: $primary-color2;
+      color: #fff;
+
+      &:before,
+      &:after {
+        border-color: $primary-color2 !important;
+      }
+    }
+  }
+
+  p {
+    img {
+      margin-right: 10px;
+    }
+  }
+
+
+  .vs-hero-carousel {
+    @media only screen and (min-width: 1500px) {
+      &:not([data-navprevnext="true"]) {
+        .ls-bottom-nav-wrapper {
+          position: absolute;
+          left: 85px;
+          top: 0 !important;
+          height: 100%;
+          display: flex !important;
+          align-items: center;
+
+          .ls-bottom-slidebuttons {
+            a {
+              display: block !important;
+              margin-bottom: 15px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.vs-hero-layout3 {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/hero/hero-bg-3-1.png');
+    background-size: 100% 100%;
+    height: 225px;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+@include xl {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      left: 20px;
+    }
+
+    .ls-nav-next {
+      left: auto;
+      right: 20px;
+    }
+  }
+}
+
+
+@include ml {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      width: 60px;
+      height: 60px;
+      &:after {
+        line-height: 60px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .vs-hero-layout1 {
+    .big-title.ls-layer {
+      transform: translateX(-100px) translateY(-525px) scale(0.7);
+    }
+  }
+
+  .vs-hero-layout3 {
+    &:after {
+      height: 145px;
+    }
+  }
+
+  .vs-hero-carousel {
+    .vs-btn {
+      font-size: 14px;
+    }
+  }
+}
+
+
+@include lg {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      width: 40px;
+      height: 40px;
+      &:after {
+        line-height: 40px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .vs-hero-layout1 {
+    .big-title.ls-layer {
+      transform: translateX(-100px) translateY(-425px) scale(0.7);
+    }
+
+    .vs-hero-carousel {
+      .sub-title {
+        img {
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  .vs-hero-carousel {
+    .vs-btn {
+      padding: 7px;
+      padding-left: 15px;
+
+      i {
+        margin-left: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@include md {
+  
+  .vs-hero-layout1 {
+    .big-title.ls-layer {
+      transform: translateX(-100px) translateY(-325px) scale(0.7);
+    }
+  }
+
+  .vs-hero-layout3 {
+    &:after {
+      height: 100px;
+    }
+
+    .vs-hero-carousel .vs-btn {
+      margin-left: -30px;
+    }
+  }
+
+}
+
+
+@include sm {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      display: none;
+    }
+  }
+
+  .vs-hero-layout1 {
+    .big-title.ls-layer {
+      transform: translateX(-100px) translateY(-225px) scale(0.7);
+    }
+  }
+
+  .vs-hero-layout3 {
+    &:after {
+      height: 70px;
+    }
+  }
+
+}
+
+@include xs {
+  .vs-hero-layout1 {
+    .big-title.ls-layer {
+      transform: translateX(-50px) translateY(-125px) scale(0.7);
+    }
+  }
+
+  .vs-hero-layout3 {
+    &:after {
+      height: 30px;
+    }
+  }
+
+  .vs-hero-carousel {
+    .vs-btn {
+      transform: scale(0.7);
+      transform-origin: top left;
+    }
+
+    .ls-bottom-nav-wrapper {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.vs-about-us-layout3 {
+
+  .about-imgage2 {
+    @include equal-size(325px);
+    box-shadow: 0px 5px 50px 0px rgba($color: $primary-color3, $alpha: 0.15);
+    position: absolute;
+    bottom: 0;
+    right: -75px;
+  } 
+  
+  .experiance-box {
+    @include equal-size(269px);
+    border: 12px solid;
+    text-align: center;
+    box-shadow: 0px 5px 50px 0px rgba($color: $primary-color3, $alpha: 0.15);
+    position: absolute;
+    left: -50px;
+    top: 0;
+  }
+
+  .total-exp {
+    font-size: 86px;
+    font-weight: 600;
+    font-family: $font2;
+
+    &:after {
+      content: '+';   
+      position: relative;
+      font-size: 5rem;
+      font-weight: 500;
+    }
+  }
+
+
+  .author-info {
+    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 30px 0px rgba($color: $primary-color3, $alpha: 0.15);
+    border-bottom: 2px solid;
+  }
+
+  .author-sign {
+    vertical-align: text-bottom;
+  }
+
+}
+
+
+@include ml {
+  .vs-about-us-layout3 {
+    .experiance-box {
+      left: 0;
+    }
+
+    .about-content {
+      .title {
+        font-size: 46px;
+      }
+    }
+  }
+}
+
+
+@include  lg {
+  .vs-about-us-layout3 {
+    .experiance-box {
+      width: 180px;
+      height: 180px;
+      border-width: 4px;
+
+    }
+    .total-exp {
+      font-size: 42px;
+
+      &:after {
+        font-size: 2rem;
+      }
+    }
+
+    .exp-text {
+      font-size: 14px;
+    }
+
+    .about-imgage2 {
+      @include equal-size(200px);
+      right: 0;
+    }
+  }
+}
+
+
+
+@include  md {
+  .vs-about-us-layout3 {
+    .experiance-box {
+      @include equal-size(150px)
+    }
+
+    .exp-text {
+      font-size: 12px;
+    }
+
+    .about-content {
+      .title {
+        font-size: 34px;
+      }
+    }
+
+    .about-imgage2 {
+      @include equal-size(160px);
+    }
+
+    .author-sign {
+      max-width: 125px;
+    }
+  }
+}
+
+
+
+@include  sm {
+  .vs-about-us-layout3 {
+
+    .about-content {
+      .title {
+        font-size: 26px;
+      }
+    }
+
+    .author-info {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .author-sign {
+      max-width: 200px;
+    }
+  }
+}
+
+@include xs {
+  .vs-about-us-layout3 {
+    .experiance-box {
+      @include equal-size(120px);
+      padding: 0 10px;
+    }
+
+    .exp-text {
+      font-size: 11px;
+      line-height: 1.1;
+    }
+
+    .total-exp {
+      font-size: 24px;
+
+      &:after {
+        font-size: 1rem;
+      }
+    }
+
+    .about-imgage2 {
+      @include equal-size(130px);
+      bottom: 10px;
+    }
+  }
+}

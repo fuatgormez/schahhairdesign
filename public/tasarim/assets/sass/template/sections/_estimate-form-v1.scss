@@ -1,0 +1,35 @@
+.estimate-form-layout1 {
+  border-bottom: 5px solid;
+  
+  .bg-secondary {
+    box-shadow: 0px 5px 15px 0px rgba($color: $primary-color, $alpha: 0.15);
+  }
+
+  .vs-btn {
+    height: 60px;
+  }
+  
+}
+
+
+@media (min-width: $lg) and (max-width: $ml) {
+  .estimate-form-layout1 {
+    .vs-btn {
+      font-size: 13px;
+
+      i {
+        margin-left: 1rem !important;
+      }
+    }
+  }
+}
+
+@include sm {
+  .estimate-form-layout1 {
+    .text-md {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
+}

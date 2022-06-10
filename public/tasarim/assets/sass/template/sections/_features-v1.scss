@@ -1,0 +1,93 @@
+.vs-features-wrapper {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+
+.vs-features-layout1 {
+
+  .features-icon {
+    display: inline-block;
+  }
+
+  .features-list {
+    margin-bottom: 25px;
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 5px;
+
+      &:before {
+        content: '\f00c';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: $iconFont;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .vs-features {
+    box-shadow: 0px 10px 40px 0px rgba($color: $titleColor, $alpha: 0.1);
+    padding: 50px 60px;
+    padding-bottom: 50px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      width: 100%;
+      border-bottom: 5px solid;
+      opacity: 0.2;
+      border-color: inherit;
+      transition: all ease 0.4s;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+
+
+@include ml {
+  .vs-features-layout1 {
+    .vs-features {
+      padding: 25px 30px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+@include sm {
+  .vs-features-layout1 {
+    .vs-features {
+      padding: 15px 20px;
+      padding-bottom: 15px;
+    }
+
+    .features-text {
+      margin-bottom: 15px;
+    }
+  }
+}

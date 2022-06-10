@@ -1,0 +1,95 @@
+.vs-faq-layout1 {
+  .faq-card {
+    margin-bottom: 20px;
+    border: 2px solid rgba($color: $titleColor, $alpha: 0.10);
+    transition: all ease 0.4s;
+
+    &.open {
+      border-color: $primary-color2;
+    }
+  }
+
+  .faq-card-body {
+    padding: 25px 30px;
+  }
+
+
+  .faq-question {
+    border: none;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    padding: 26px 30px;
+    padding-right: 70px;
+    color: $titleColor;
+
+    
+    &:after {
+      content: '\f067';
+      font-family: $iconFont;
+      display: inline-block;
+      @include equal-size(40px);
+      line-height: 40px;
+      background-color:  $primary-color2;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      position: absolute;
+      top: 18px;
+      right: 19px;
+      border-radius: 50%;
+    }
+    
+    
+    &:not(.collapsed) {
+      background-color: $primary-color2;
+      color: #fff;
+      
+      &:after {
+        content: '\f068';
+        background-color: #fff;
+        color: $primary-color2;
+      }
+    }
+  }
+}
+
+
+
+@include lg {
+  .vs-faq-layout1 {
+    .faq-question {
+      font-size: 16px;
+    }
+
+    .faq-text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@include xs {
+  .vs-faq-layout1 {
+    .faq-question {
+      padding: 10px 15px;
+      padding-right: 50px;
+      
+      &:after {
+        @include equal-size(30px);
+        line-height: 30px;
+        font-size: 14px;
+        right: 10px;
+      }
+    }
+
+    .faq-card-body {
+      padding: 10px 15px;
+    }
+  }
+}

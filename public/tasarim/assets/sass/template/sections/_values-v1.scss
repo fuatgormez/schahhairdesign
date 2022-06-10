@@ -1,0 +1,50 @@
+.vs-values-layout1 {
+  @media (min-width: $xl) {
+
+    .heading4 {
+      font-size: 22px;
+    }
+
+    .inner-list {
+      ul {
+        li {
+          padding-left: 55px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+  }
+
+  .inner-list {
+    ul {
+      li {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .values-video {
+    box-shadow: 0px 5px 50px 0px rgba($color: $primary-color3, $alpha: 0.15);
+
+  }
+}
+
+
+@include sm {
+  .vs-values-layout1 {
+    .inner-list {
+      ul {
+        li {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

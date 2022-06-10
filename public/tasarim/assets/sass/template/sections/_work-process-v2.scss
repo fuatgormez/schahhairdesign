@@ -1,0 +1,70 @@
+.work-process-layout2 {
+  position: relative;
+  
+  .work-process-number {
+    @include equal-size(150px);
+    margin: 0 auto;
+    margin-bottom: -50px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .number {
+    font-size: 40px;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 100px;
+  }
+
+  .work-process-body {
+    @include equal-size(320px);
+    border-radius: 50%;
+    border: 8px solid;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px 0px rgba($color: $titleColor, $alpha: 0.15);
+  }
+
+  .work-process-icon {
+    @include equal-size(140px);
+    border: 5px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -80px;
+    box-shadow: 0px 0px 50px 0px rgba($color: $titleColor, $alpha: 0.15);
+  }
+
+  .vs-work-process {
+    text-align: center;
+    margin-bottom: 30px;
+
+    a:hover {
+      color: inherit;
+    }
+
+
+  }
+}
+
+
+@include lg {
+  .work-process-layout2 {
+    .work-process-body {
+      width: 290px;
+      height: 290px;
+      border-width: 5px;
+    }
+
+    .work-process-icon {
+      width: 130px;
+      height: 130px;
+      border-width: 3px;
+      margin-top: -70px;
+    }
+  }
+}

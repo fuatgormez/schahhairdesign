@@ -1,0 +1,127 @@
+.project-details-layout1 {
+
+  .project-details-img {
+    .image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .play-btn {
+      position: absolute;
+      right: -35px;
+      bottom: -35px;
+      z-index: 2;
+      @include equal-size(150px);
+      line-height: 150px;
+    }
+
+    .slick-arrow {
+      background-color: #ffffff;
+      color: $primary-color3;
+      left: 80px;
+
+      &:hover {
+        background-color: $primary-color3;
+        color: #ffffff;
+      }
+
+      &.slick-next {
+        right: 80px;
+        left: auto;
+      }
+    }
+
+  }
+
+  .project-info-title {
+    @extend .widget_title;
+    margin-bottom: 25px !important;
+  }
+
+  .project-information {
+    background-color: rgba($color: $primary-color, $alpha: 0.07);
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.30);
+    margin-bottom: 30px;
+    padding: 30px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        strong {
+          margin-right: 20px;
+          width: 100px;
+          position: relative;
+          display: inline-block;
+
+          &:after {
+            content: ':';
+            float: right;
+          }
+        }
+
+        i {
+          margin-right: 3px;
+          font-size: 14px;
+          &.fas.fa-star {
+            color: #e9a604;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include lg {
+  .project-details-layout1 {
+    .project-information {
+      padding: 20px;
+
+      .text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        li {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+      }
+      
+    }
+
+    .project-info-title {
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+
+@include md {
+  .project-details-layout1 {
+    .box {
+      max-height: 55px;
+      margin-top: 4px;
+    }
+
+    .project-details-img {
+      .play-btn {
+        @include equal-size(80px);
+        line-height: 80px;
+        right: -10px;
+        bottom: -10px;
+        font-size: 16px;
+      }
+    }
+  }
+}

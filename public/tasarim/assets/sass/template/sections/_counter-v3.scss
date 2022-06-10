@@ -1,0 +1,77 @@
+.counter-box-layout3 {
+
+  .counter {
+    line-height: 1;
+  }
+
+  .counter-icon {
+    &:before {
+      @include equal-size(100px);
+      border-radius: 50%;
+      bottom: auto;
+      right: auto;
+      display: inline-block;
+      top: 50%;
+      left: 20px;
+      opacity: 0.06;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .counter-content {
+    padding: 28px 0;
+    width: 100%;
+    
+    .text {
+      line-height: 1;
+      display: block;
+    }
+  }
+  
+  .row {
+    
+    >div {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      @include xs {
+        justify-content: start;
+        margin-left: 20px;
+      }
+      
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 100px;
+        width: 1px;
+        border-right: 1px dashed;
+        margin-top: -50px;
+        border-color: inherit;
+      }
+
+      @include md {
+        &:nth-child(2n) {
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      @include xs {
+        &:after {
+          display: none;
+        }
+      }
+
+    }
+    
+    >div:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

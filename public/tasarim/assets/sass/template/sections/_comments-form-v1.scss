@@ -1,0 +1,85 @@
+.comments-form-layout1 {
+  .comment-form {
+    background-color: rgba($color: $primary-color, $alpha: 0.07);
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.30);
+    padding: 40px;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 60px;
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.30);
+    color: $bColor;
+    border-radius: 0;
+
+    @include inputPlaceholder {
+      color: $bColor;
+    }
+
+  }
+
+  textarea {
+    padding-top: 15px;
+    resize: none;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    > i {
+      position: absolute;
+      right: 40px;
+      top: 18px;
+      font-size: 18px;
+      border: none;
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+
+  .vs-btn {
+    border-radius: 0;
+  }
+
+}
+
+
+@include lg {
+  .comments-form-layout1 {
+    .comment-form {
+      padding: 30px;
+    }
+  }
+}
+
+
+@include sm {
+  .comments-form-layout1 {
+    .comment-form {
+      padding: 10px;
+    }
+
+    .form-control {
+      height: 50px;
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 35px;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    .form-group {
+      >i {
+        right: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+

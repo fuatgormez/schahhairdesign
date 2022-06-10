@@ -1,0 +1,35 @@
+.appointment-form-layout1 {
+  &[data-overlay="primary"] {
+    &:before {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, rgba($color: $primary-color, $alpha: 1) 30%, rgba(255,255,255,0) 100%);
+    }
+  }
+  
+  &[data-overlay="primary2"] {
+    &:before {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, rgba($color: $primary-color2, $alpha: 1) 30%, rgba(255,255,255,0) 100%);
+    }
+  }
+  
+  &[data-overlay="primary3"] {
+    &:before {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, rgba($color: $primary-color3, $alpha: 1) 30%, rgba(255,255,255,0) 100%);
+    }
+  }
+
+  &[data-overlay="titlecolor"] {
+    &:before {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, rgba($color: $titleColor, $alpha: 1) 30%, rgba(255,255,255,0) 100%);
+    }
+  }
+
+  @include xs {
+    background-size: auto !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+  }
+}

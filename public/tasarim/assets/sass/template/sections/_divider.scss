@@ -1,0 +1,46 @@
+.divider-layout1 {
+  position: relative;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: calc(50% - 67.5px);
+    height: 1px;
+    background-color: $titleColor;
+    opacity: 0.10;
+    margin-top: -0.5px;
+  }
+
+  &:after {
+    left: auto;
+    right: 0;
+  }
+
+  .icon {
+    @include equal-size(90px);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 0px 5px 30px 0px rgba($color: $titleColor, $alpha: 0.1);
+
+
+    i {
+      @include equal-size(100%);
+      transform: scale(0.8);
+      border: 1px dashed;
+      display: inline-block;
+      border-radius: inherit;
+    }
+
+    i {
+      line-height: inherit;
+    }
+  }
+}

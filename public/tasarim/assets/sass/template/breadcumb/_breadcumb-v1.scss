@@ -1,0 +1,90 @@
+.breadcumb-layout1 {
+  .breadcumb-content {
+    position: relative;
+  }
+
+  .breadcumb-title {
+    margin-top: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 270px;
+    padding: 26.5px 40px;
+    text-align: center;
+    
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 6px;
+      color: inherit;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2;
+
+      &:after {
+        content: '\f054';
+        font-family: $iconFont;
+        margin-left: 6px;
+        font-size: 0.7rem;
+        position: relative;
+        vertical-align: middle;
+        line-height: 0;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+      }
+
+    }
+  }
+}
+
+
+@include lg {
+  .breadcumb-layout1 {
+    ul {
+      right: 0;
+      bottom: 0;
+      min-width: auto;
+      padding: 21.8px 40px;
+
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+@include sm {
+  .breadcumb-layout1 {
+    .breadcumb-content {
+      text-align: center;
+    }
+
+    ul {
+      left: 0;
+      right: 0;
+      padding: 15px 30px;
+      display: block;
+    }
+  }
+}

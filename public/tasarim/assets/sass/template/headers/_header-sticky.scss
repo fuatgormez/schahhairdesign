@@ -1,0 +1,30 @@
+.sticky-header-wrap {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.1);
+  transition: all ease 0.4s;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+    }
+  }
+}

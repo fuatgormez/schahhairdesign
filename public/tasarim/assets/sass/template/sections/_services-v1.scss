@@ -1,0 +1,432 @@
+.service-box-layout1 {
+
+  .slick-arrow {
+    top: 35.7%;
+  }
+
+  .service-price {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    min-width: 140px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    @extend .radius-50;
+  }
+
+  .service-image {
+    min-height: 326px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .service-header {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background-image: linear-gradient(to top, rgba($color: $primary-color3, $alpha: 0.80) 45%, rgba(255, 255, 255, 0) 100%);
+      z-index: 1;
+      opacity: 1;
+      visibility: visible;
+      @extend .transition;
+    }
+
+    .title {
+      margin-bottom: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      padding-bottom: 30px;
+      padding-left: 40px;
+      @extend .transition;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    
+  }
+
+
+  .service-body {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 30px 0px rgba($color: $titleColor, $alpha: 0.20);
+    padding: 36px 40px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    @extend .transition;
+
+    .icon {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      font-size: 68px;
+      line-height: 1;
+      color: rgba($color: $titleColor, $alpha: 0.05);
+    }
+    
+    .title {
+      position: relative;
+      z-index: 2;
+    }
+
+    .text {
+      margin-bottom: 17px;
+    }
+
+    a.link-btn,
+    .text {
+      top: 30px;
+      opacity: 0;
+      visibility: hidden;
+      position: relative;
+      @extend .transition;
+      z-index: 2;
+    }
+
+  }
+
+  .vs-service {
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover {
+      .service-body {
+        left: 130px;
+        opacity: 1;
+        visibility: visible;
+
+        a.link-btn,
+        .text {
+          opacity: 1;
+          visibility: visible;
+          top: 0;
+          transition-delay: 0.2s;
+        }
+
+        a.link-btn {
+          transition-delay: 0.3s;
+        }
+      }
+
+      .service-header {
+
+        &:before {
+          opacity: 0;
+          visibility: hidden;
+        }
+        
+        .title {
+          opacity: 0;
+          visibility: hidden;
+          left: 130px;
+        }
+      }
+    }
+  }
+
+  .vs-carousel {
+    .vs-service {
+      padding-bottom: 100px;
+
+    }
+
+    .service-body {
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $xl) {
+    .row>div:nth-child(3n) {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -130px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $md) and (max-width: $xl) {
+    .row>div:nth-child(3n) {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -60px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $sm) and (max-width: $md) {
+    .row>div:nth-child(2n) {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -40px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .slick-last {
+    .vs-service {
+      &:hover {
+        .service-body {
+          left: -130px;
+        }
+      }
+    }
+  }
+
+  
+
+
+}
+
+
+@include xl {
+  .service-box-layout1 {
+    .service-image {
+      min-height: auto;
+    }
+    .vs-service {
+      &:hover {
+        .service-body {
+          left: 60px;
+        }
+      }
+    }
+
+    .slick-last {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include ml {
+  .service-box-layout1 {
+    .service-price {
+      top: 20px;
+      right: 20px;
+      min-width: 130px;
+      padding: 0 10px;
+    }
+
+    .service-header {
+      .title {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+    }
+
+    .service-body {
+      padding: 26px 29px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+    }
+    
+    .vs-service {
+      .icon {
+        right: 20px;
+        top: 20px;
+        font-size: 42px;
+      }
+
+      &:hover {
+        .service-body {
+          left: 60px;
+        }
+      }
+    }
+
+    .slick-last {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include lg {
+  .service-box-layout1 {
+    .vs-carousel {
+      .vs-service {
+        padding-bottom: 70px;
+      }
+    }
+  }
+}
+
+
+@include md {
+  .service-box-layout1 {
+    .vs-service {
+      &:hover {
+        .service-body {
+          left: 40px;
+        }
+      }
+    }
+    
+
+    .slick-last {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: -40px;
+          }
+        }
+      }
+    }
+
+    .vs-carousel {
+      .vs-service {
+        padding-bottom: 30px;
+      }
+
+    }
+  }
+}
+
+
+@include sm {
+  .service-box-layout1 {
+    .vs-service {
+      .service-body {
+        width: 90%;
+      }
+      
+      &:hover {
+        .service-body {
+          left: 30px;
+        }
+      }
+    }
+
+
+    .slick-last {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: 30px;
+          }
+        }
+      }
+    }
+
+    .vs-carousel {
+      .vs-service {
+        padding-bottom: 30px;
+      }
+
+    }
+  }
+}
+
+@include xs {
+  .service-box-layout1 {
+    .vs-service {
+      box-shadow: 0px 3px 30px 0px rgba($color: $titleColor, $alpha: 0.20);
+
+      .service-header {
+        &::before {
+          display: none;
+        }
+        
+        .title {
+          display: none;
+        }
+      }
+
+      .service-body {
+        width: 90%;
+        padding: 20px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        box-shadow: none;
+
+        .heading4 {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+
+        .text,
+        a.link-btn {
+          opacity: 1;
+          visibility: visible;
+          top: 0;
+        }
+      }
+      
+      &:hover {
+        .service-body {
+          left: 0;
+        }
+      }
+    }
+
+    .row>div:nth-child(3n),
+    .slick-last {
+      .vs-service {
+        &:hover {
+          .service-body {
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .vs-carousel {
+      .vs-service {
+        padding-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 60px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.work-process-layout3 {
+  
+  &.gradient-overlay {
+    &[data-overlay="primary"]:before {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, rgba($color: $primary-color, $alpha: 1) 0%, rgba($color: $primary-color, $alpha: 0) 80%);
+    }
+  }
+
+  .process-number {
+    @include equal-size(80px);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 72px;
+    font-size: 24px;
+    font-weight: 500;
+    box-shadow: 0px 0px 50px 0px rgba($color: $primary-color, $alpha: 0.3);
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+  }
+
+  .vs-work-process {
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  
+  .inner-wrapper {
+    position: relative;
+    z-index: 9;
+  }
+  
+  
+}
+
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .work-process-layout3 {
+    .inner-wrapper.pr-xl-140 {
+      padding-right: 5% !important;
+
+      .counter-box-layout3 {
+        &.mr-xl-200 {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@include ml {
+  .work-process-layout3 {
+    .vs-work-process {
+      padding: 25px;
+      padding-bottom: 0px;
+    }
+
+    .process-number {
+      width: 60px;
+      height: 60px;
+      line-height: 55px;
+      font-size: 18px;
+      left: -5px;
+      bottom: -10px;
+    }
+
+    .inner-wrapper.pr-xl-140 {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+      width: 100%;
+
+      .counter-box-layout3 {
+        &.mr-xl-200 {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  .work-process-layout3 {
+    .process-number {
+      line-height: 65px;
+      right: -5px;
+      top: -10px;
+      left: auto;
+      bottom: auto;
+    }
+  }
+}
+
+
+@include md {
+  .work-process-layout3 {
+    .inner-wrapper.pr-xl-140 {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+      width: 100%;
+    }
+  }
+}

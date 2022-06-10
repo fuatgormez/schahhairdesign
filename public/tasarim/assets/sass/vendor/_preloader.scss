@@ -1,0 +1,69 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    z-index: 2;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+
+  .loader-inner {
+    z-index: 1;
+  }
+
+  .loader {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 4px;
+    animation: spin 1.5s infinite ease;
+
+    &:nth-of-type(2) {
+      animation-delay: 0.1s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: 0.3s;
+    }
+  }
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

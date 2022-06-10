@@ -1,0 +1,49 @@
+.service-box-layout3 {
+  .vs-service {
+    background-size: 100% 100%;
+    box-shadow: 0px 5px 40px 0px rgba(0, 17, 24, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .service-price {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    min-width: 140px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+  }
+
+  .service-content {
+    padding: 0 40px;
+    padding-bottom: 10px;
+  }
+
+  .service-image {
+    position: relative;
+  }
+
+}
+
+@include lg {
+  .service-box-layout3 {
+    .service-content {
+      padding: 0 20px;
+      padding-bottom: 1px;
+
+      .text {
+        margin-bottom: 15px;
+      }
+      .title {
+        margin-bottom: 10px;
+      }
+
+    }
+    .service-image {
+      margin-bottom: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.vs-cta-layout1 {
+  .cta-title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-top: -7px;
+  }
+
+  @media (min-width: $lg) {
+    .cta-button {
+      .vs-btn {
+        width: 180px;
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 55px;
+        line-height: 55px;
+
+        i {
+          float: right;
+          vertical-align: middle;
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@include ml {
+  .vs-cta-layout1 .cta-title {
+    font-size: 36px;
+  }
+}
+
+@include lg {
+  .vs-cta-layout1 {
+
+    .cta-button {
+      .vs-btn {
+        padding: 8px;
+        padding-left: 20px;
+        margin-right: 10px;
+        font-size: 14px;
+
+        i {
+          margin-left: 20px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+
+@include sm {
+  .vs-cta-layout1 {
+    .cta-title {
+      font-size: 28px;
+      line-height: 1.4;
+    }
+  }
+}
+
+@include xs {
+  .vs-cta-layout1 {
+    .cta-content {
+      .cta-title {
+        font-size: 24px;
+      }
+    }
+    
+    .cta-button {
+      .vs-btn {
+        display: block;
+        max-width: 180px;
+        margin-left: auto;
+        margin-right: auto !important;
+      }
+    }
+  }
+}

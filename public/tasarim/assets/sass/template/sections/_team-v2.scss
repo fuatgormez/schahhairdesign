@@ -1,0 +1,127 @@
+.vs-team-layout2 {
+   
+  img {
+    width: 100%;
+  }
+
+  .social-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -25px;
+    z-index: 2;
+
+    li {
+      display: inline-block;
+      margin: 0 3px;
+
+      a {
+        position: relative;
+        top: -20px;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    a {
+      display: inline-block;
+      @include equal-size(50px);
+      line-height: 50px;
+      background-color: #ffffff;
+      text-align: center;
+      color: $primary-color3;
+      border-radius: 50%;
+      box-shadow: 0px 3px 30px 0px rgba($color: $primary-color, $alpha: 0.3), 
+      0px 3px 15px 0px rgba($color: $primary-color, $alpha: 0.1);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    a.plus-icon {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -25px;
+    }
+  }
+
+  .member-content {
+    padding-top: 55px;
+    padding-bottom: 30px;
+    position: relative;
+    border-bottom: 3px solid;
+  }
+
+  .vs-team-member {
+    box-shadow: 0px 10px 50px 0px rgba($color: $primary-color3, $alpha: 0.2);
+    margin-bottom: 30px;
+ 
+    &:hover {
+      .social-links {
+        > a {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        ul {
+          li {
+            a {
+              top: 0;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@include lg {
+  .vs-team-layout2 {
+    .social-links {
+      margin-top: -20px;
+
+      li {
+        margin: 0 2px;
+      }
+
+      a {
+        @include equal-size(40px);
+        line-height: 40px;
+        font-size: 13px;
+      }
+    }
+
+    .member-content {
+      padding-top: 35px;
+    }
+  }
+}
+
+
+@include sm {
+  .vs-team-layout2 {
+    .social-links {
+      margin-top: -20px;
+
+      li {
+        margin: 0 0;
+      }
+
+      a {
+        @include equal-size(35px);
+        line-height: 35px;
+        font-size: 12px;
+      }
+    }
+
+    .member-content {
+      padding-top: 35px;
+    }
+  }
+}

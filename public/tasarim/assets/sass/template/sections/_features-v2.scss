@@ -1,0 +1,91 @@
+.vs-features-layout2 {
+  .vs-features {
+    text-align: center;
+    padding: 80px 55px;
+    padding-bottom: 75px;
+    transition: all ease 0.4s;
+  }
+  
+  .features-title {
+    line-height: 30px;
+  }
+  
+  .features-icon {
+    box-shadow: 0px 5px 50px 0px rgba($color: $primary-color3, $alpha: 0.15);
+    @include equal-size(120px);
+    border-radius: 50%;
+    line-height: 120px;
+    background-color: #ffffff;
+    display: inline-block;
+    
+    i {
+      vertical-align: middle;
+    }
+  }
+  
+  .features-title,
+  .features-text {
+    transition: all ease 0.4s;
+  }
+  
+  
+  .inner-wrapper {
+    box-shadow: 0px 10px 250px 0px rgba($color: $titleColor, $alpha: 0.1);
+  }
+
+
+  .slick-center .vs-features,
+  .vs-features:hover {
+    background-color: $primary-color3;
+    .features-title,
+    .features-text {
+      color: #ffffff;
+    }
+  }
+
+}
+
+
+
+@include ml {
+  .vs-features-layout2 {
+    .vs-features {
+      padding: 60px 35px;
+    }
+
+    .features-icon {
+      @include equal-size-lineHeight(100px);
+    }
+  }
+}
+
+
+
+@include lg {
+  .vs-features-layout2 {
+    .vs-features {
+      padding: 40px 20px;
+    }
+    .features-title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .features-icon {
+      @include equal-size-lineHeight(100px);
+    }
+  }
+}
+
+
+@include sm {
+  .vs-features-layout2 {
+    .vs-features {
+      padding: 30px 15px;
+    }
+
+    .features-icon {
+      @include equal-size-lineHeight(80px);
+    }
+  }
+}

@@ -1,0 +1,236 @@
+.vs-price-table {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.price-table-layout1 {
+
+  .price-table-top {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .package-name {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  .package-price {
+    color: $titleColor;
+    font-size: 20px;
+    text-align: center;
+    transition: all ease 0.3s;
+    margin-bottom: 30px;
+
+    span {
+      line-height: 1;
+    }
+
+    .price {
+      font-size: 60px;
+      font-weight: 600;
+      font-family: $font2;
+      margin-top: 5px;
+    }
+
+  }
+
+  .package-icon {
+    @include equal-size(140px);
+    text-align: center;
+    background-color: $primary-color3;
+    color: #ffffff;
+    border: 8px solid #ffffff;
+    line-height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .package-features {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    li {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 13px;
+      transition: all ease 0.3s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '\f00c';
+        font-family: $iconFont;
+        color: $primary-color;
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .vs-price-table {
+    background-color: $secondary-color;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    @extend .transition;
+
+    &:after {
+      content: '';
+      @extend .overlay;
+      background-color: #fff;
+      z-index: -1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -350px;
+      display: inline-block;
+      height: 600px;
+      width: 600px;
+      border: 10px solid #ffffff;
+      background-color: $primary-color3;
+      z-index: 1;
+      transform: translateX(-50%);
+      transition: all ease 0.3s;
+      border-radius: 50%;
+    }
+    
+
+    .vs-btn {
+      width: 200px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+
+      &:hover {
+        color: $titleColor !important;
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .popular-package.vs-price-table,
+  .slick-center .vs-price-table,
+  .vs-price-table:hover {
+    background-color: $primary-color3;
+
+    &:before {
+      background-color: $primary-color;
+    }
+
+    .package-price {
+      color: #ffffff;
+    }
+
+    .package-features {
+      li {
+        color: #ffffff;
+      }
+    }
+
+    .vs-btn {
+      background-color: $primary-color;
+      color: #ffffff;
+      border-color: transparent;
+
+      .btn-bg {
+        background-color: #ffffff;
+      }
+    }
+
+  }
+}
+
+
+
+
+@include ml {
+  .price-table-layout1 {
+    .vs-price-table {
+      padding: 20px;
+      padding-bottom: 40px;
+
+      &:before {
+        top: -370px;
+      }
+    }
+
+    .package-price .price {
+      font-size: 48px;
+      margin-top: 0;
+    }
+  }
+}
+
+
+
+@include md {
+  .price-table-layout1 {
+    .vs-price-table {
+
+    }
+  }
+}
+
+
+@include sm {
+  .price-table-layout1 {
+    .package-icon {
+      width: 100px;
+      height: 100px;
+      border-width: 5px;
+      line-height: 100px;
+    }
+    .vs-price-table {
+      &:before {
+        top: -400px;
+      }
+    }
+  }
+}
+
+
+@include xs {
+  .price-table-layout1 {
+    .package-name {
+      font-size: 24px;
+    }
+
+    .package-price {
+      font-size: 18px;
+
+      .price {
+        font-size: 34px;
+        margin-top: 4px;
+      }
+    }
+    .vs-price-table {
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &::before {
+        top: -410px;
+      }
+    }
+  }
+}

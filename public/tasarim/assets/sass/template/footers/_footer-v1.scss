@@ -1,0 +1,380 @@
+.footer-layout1 {
+  .text-primary2 {
+    color: $primary-color2 !important;
+  }
+
+  i {
+    font-weight: 400;
+  }
+
+  span,
+  p,
+  a {
+    color: $titleColor;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    
+    li {
+      list-style-type: none;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
+  .widget_title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    @extend .font2;
+    padding-left: 23px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 20px;
+      background-color: $primary-color;
+    }
+
+  }
+
+  .widget {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: transparent;
+
+    ul {
+      li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          content: '\f00c';
+          @extend .iconFont;
+          color: $primary-color;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        a {
+          font-weight: 400;
+          text-transform: capitalize;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 0;
+            height: 2px;
+            background-color: $primary-color;
+            @extend .transition;
+          }
+
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+
+    .vs-recent-post {
+      padding-top: 2px;
+
+      .recent-post {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:last-of-type,
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .post-img {
+          width: 100px;
+          height: 80px;
+          margin-right: 20px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .post-content {
+          a {
+            font-weight: 700;
+            line-height: 24px;
+            display: block;
+            letter-spacing: 0;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+
+          span {
+            font-size: 14px;
+            display: inline-block;
+            line-height: 1;
+            margin-bottom: 0;
+            color: $titleColor;
+
+            i {
+              margin-right: 8px;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    
+
+    .vs-contact-widget {
+      .row>div {
+        border-color: rgba($color: $titleColor, $alpha: 0.10) !important;
+      }
+
+      p {
+        position: relative;
+        padding-left: 28px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+        font-weight: 400;
+
+        i {
+          position: absolute;
+          left: 0;
+          top: 4px;
+          color: $primary-color;
+          font-size: inherit;
+        }
+      }
+
+      .social-links {
+        border-color: rgba($color: $titleColor, $alpha: 0.10) !important;
+
+        ul {
+          li {
+            display: inline-block;
+            margin-bottom: 0;
+            padding-left: 0;
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:before {
+              display: none;
+            }
+
+            a {
+              @include equal-size(40px);
+              text-align: center;
+              color: $titleColor;
+              font-size: 14px;
+              line-height: 40px;
+              @extend .radius-circle;
+              background-color: #fff;
+              border: 1px solid rgba($color: $primary-color, $alpha: 0.20);
+
+              &:hover {
+                color: #fff;
+                background-color: $primary-color;
+              }
+
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &[data-overlay="primary3"] {
+    .widget_title {
+      color: #fff;
+    } 
+
+    .vs-contact-widget {
+      .row>div {
+        border-color: rgba($color: #fff, $alpha: 0.10) !important;
+      }
+
+      .social-links {
+        border-color: rgba($color: #fff, $alpha: 0.10) !important;
+
+        a {
+          color: $titleColor !important;
+          border-color: transparent;
+
+          &:hover {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    span,
+    p,
+    a {
+      color: #fff !important;
+    }
+
+    a:hover {
+      color: $primary-color !important;
+    }
+
+    .text-primary2 {
+      color: $primary-color2 !important;
+    }
+  }
+
+
+  .footer-copyright {
+    position: relative;
+    z-index: 9;
+    
+    .line {
+      border: 1px solid;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      opacity: 0.10;
+    }
+  }
+}
+
+
+
+
+@include ml {
+  .footer-layout1 {
+    .widget_title {
+      margin-bottom: 20px;
+    }
+    .widget {
+      .vs-contact-widget {
+        a.text-lg {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@include lg {
+  .footer-layout1 {
+    .widget {
+
+      .vs-contact-widget {
+        a.text-lg {
+          font-size: 16px;
+        }
+
+        .social-links {
+          ul {
+            li {
+              margin-right: 2px ;
+
+              &:last-child {
+                margin-right: 0;
+              }
+              
+              a {
+                width: 30px;
+                height: 30px;
+                font-size: 13px;
+                line-height: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@include sm {
+  .footer-layout1 {
+    .widget {
+
+      ul {
+        li {
+          padding-left: 25px;
+          margin-bottom: 0;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .vs-recent-post {
+        .recent-post {
+          .post-content {
+            a {
+              line-height: 18px;
+              font-size: 14px;
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include xs {
+  .footer-layout1 {
+    .widget {
+      .vs-contact-widget {
+        .row {
+          >.border-right {
+            border-right: none !important;
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12px;
+    }
+  }
+}

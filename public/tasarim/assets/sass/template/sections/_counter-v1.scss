@@ -1,0 +1,64 @@
+.counter-box-layout1 {
+
+  .counter-box {
+    
+    .icon {
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 2;
+
+      .shape {
+        content: '';
+        @include equal-size(78px);
+        display: inline-block;
+        position: absolute;
+        left: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.10;
+      }
+    }
+    .counter {
+      position: relative;
+      font-size: 60px;
+      line-height: 1;
+      font-weight: 700;
+      color: $titleColor;
+      display: inline-block;
+      margin-bottom: 15px;
+
+      &:after {
+        content: '+';
+        position: relative;
+      }
+      
+    }
+  }
+}
+
+
+@include md {
+  .counter-box-layout1 {
+    .counter-box {
+      .counter {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+
+@include xs {
+  .counter-box-layout1 {
+    .counter-box {
+      .counter {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Color Variation
+
+// Theme color
+$primary-color: #11b4f5;
+$primary-color2: #78c400;
+$primary-color3: #08275a;
+$secondary-color: rgba($color: $primary-color, $alpha: 0.17);
+$secondary-color2: rgba($color: $primary-color2, $alpha: 0.17);
+$secondary-color3: rgba($color: $primary-color3, $alpha: 0.17);
+$light-color: rgba($color: $primary-color, $alpha: 0.07);
+$white-color: #ffffff;
+
+// Body color
+$bColor: #222222;
+
+// title color
+$titleColor: #09285b;
+
+// Font Variation
+$font1: 'Roboto', sans-serif;
+$font2: 'Poppins',sans-serif;
+$bodyFont: $font1;
+$titleFont: $font1;
+$iconFont: 'Font Awesome 5 Pro';
+$iconFont2: 'Flaticon';
+$bfSize: 16px;
+$blineHeight: 26px;
+$fontWeight: 400;
+
+
+// Device Variation
+$xl: 1500px;
+$ml: 1300px;
+$lg: 1199px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;

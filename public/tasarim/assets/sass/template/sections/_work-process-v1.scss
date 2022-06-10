@@ -1,0 +1,174 @@
+.work-process-layout1 {
+  .number {
+    display: inline-block;
+    @include equal-size(95px);
+    text-align: center;
+    border: 8px solid;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 81px;
+    @extend .radius-circle;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    @extend .transition;
+  }
+
+  .work-process-top {
+    text-align: center;
+    position: relative;
+
+    .shape {
+      display: inline-block;
+      position: absolute;
+      left: 35px;
+      top: 63px;
+      width: 100%;
+      height: 290px;
+      max-width: 320px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%);
+      border-radius: 10px;
+      z-index: -1;
+      transform: rotate(-5deg);
+      @extend .transition;
+    }
+  }
+
+  .work-process-content {
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px 0px rgba($color: $primary-color, $alpha: 0.004), 0px 3px 50px 0px rgba($color: $primary-color, $alpha: 0.1);
+    background-color: rgba($color: #fff, $alpha: 0.969);
+    padding: 50px 40px;
+    padding-bottom: 47px;
+    max-width: 300px;
+    border-bottom: 3px solid;
+
+    &.bg-primary2 {
+      box-shadow: 0px 3px 0px 0px rgba($color: $primary-color2, $alpha: 0.004), 0px 3px 50px 0px rgba($color: $primary-color2, $alpha: 0.1);
+    }
+
+    &.bg-primary3 {
+      box-shadow: 0px 3px 0px 0px rgba($color: $primary-color3, $alpha: 0.004), 0px 3px 50px 0px rgba($color: $primary-color3, $alpha: 0.1);
+    }
+
+  }
+
+  .process-title {
+    &:hover {
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  
+
+  .vs-work-process {
+    min-height: 490px;
+    margin-bottom: 30px;
+
+    .icon {
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    &:hover {
+      .work-process-top {
+        .shape {
+          transform: rotate(0);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .number {
+          margin-bottom: 0px;
+          margin-left: 0%;
+        }
+      }
+    }
+  }
+}
+
+@include ml {
+  .work-process-layout1 {
+    .work-process-number {
+      &.shape {
+        left: 10px;
+      }
+    }
+  }
+}
+
+@include lg {
+  .work-process-layout1 {
+    .number {
+      width: 85px;
+      height: 85px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 70px;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .work-process-top .shape {
+      left: 0;
+    }
+
+    .work-process-number {
+      &.shape {
+        max-height: 250px;
+      }
+    }
+
+    
+    .process-title {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+
+    .text {
+      margin-bottom: 15px;
+    }
+
+    .vs-work-process {
+      margin-bottom: 30px;
+      min-height: auto;
+
+      .icon-4x {
+        font-size: 58px;
+      }
+
+      .icon {
+        margin-bottom: 15px;
+      }
+
+    }
+
+    .work-process-content {
+      padding: 30px 30px;
+    }
+  }
+}
+
+@include md {
+  .work-process-layout1 {
+    .carousel-container {
+      max-width: 100%;
+      padding: 0 30px;
+    }
+  }
+}
+
+@include sm {
+  .work-process-layout1 {
+    .process-title {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .vs-work-process {
+      .work-process-content {
+        padding: 25px 25px;
+      }
+    }
+  }
+}

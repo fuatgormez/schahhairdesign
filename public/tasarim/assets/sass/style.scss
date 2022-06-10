@@ -1,0 +1,542 @@
+/*
+Template Name: Clianio - Cleaning Services HTML Template
+Template URL: http://vecurosoft.com/products/html/clianio
+Description: Clianio - Cleaning Services HTML Template
+Author: Vecuro
+Author URI: https://themeforest.net/user/vecuro
+Version: 1.0
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*
+01. Variable
+02. Mixin
+03. Function
+04. Typography
+05. Bootstrap Overwrite
+06. Vendor Custom Style 
+    6.1. Select box
+    6.2. Slick Slider 
+    6.3. VS Mobile Menu 
+    6.4. Date & Time Picker
+    6.5. Flaticon
+    6.6. Preloader
+07. Theme Default
+08. Template Style
+    8.1. Header
+    8.2. Footer
+    8.3. Widget
+    8.4. Breadcumb
+    8.5. Popup Search
+    8.6. Pagination
+    8.7. Popup Side Menu
+    8.8. Hero Area
+    8.9. About Us
+    8.10. Estimate Form
+    8.11. Services
+    8.12. Call To Action
+    8.13. Work Process
+    8.14. Appointment Form Area
+    8.15. Testimonial
+    8.16. Brand
+    8.17. Projects
+    8.18. Blog
+    8.19. Subscribe Form
+    8.20. Counter Box
+    8.21. Price Table
+    8.22. Divider
+    8.23. Team
+    8.24. Features
+    8.25. Contact Form
+    8.26. Error
+    8.27. FAQ
+    8.28. Google Map Wrap 
+    8.29. Branch Information Box
+    8.30. Comments
+    8.31. Target
+    8.32. Our Values
+    8.33. Shopping Cart
+    8.34. Checkout
+    8.35. Shop
+09. Helper Classes
+    9.1. Overlay
+10. Animation
+11. Extend
+
+*/
+
+/*=================================
+    CSS Index End
+==================================*/
+
+
+/*=================================
+01. Variable
+==================================*/
+@import 'variable/variable';
+
+
+/*=================================
+02. Mixin
+==================================*/
+@import 'mixin/mixin';
+
+
+/*=================================
+03. Function
+==================================*/
+@import 'function/function';
+
+
+/*=================================
+04. Typography
+==================================*/
+@import 'typography/typography';
+
+
+/*=================================
+05. Bootstrap Overwrite
+==================================*/
+@import 'reset/bootstrap';
+
+
+/*=================================
+06. Vendor Custom Style
+==================================*/
+
+/*------------------- 6.1. Select 2 -------------------*/
+@import 'vendor/select-box';
+
+
+/*------------------- 6.2. Slick Slider -------------------*/
+@import 'vendor/slick-slider';
+
+
+/*------------------- 6.3. VS Mobile Menu -------------------*/
+@import 'vendor/vsmenu';
+
+
+/*------------------- 6.4. Date & Time Picker -------------------*/
+@import 'vendor/datetimepicker';
+
+
+/*------------------- 6.5. Flaticon -------------------*/
+@import 'vendor/flaticon';
+
+
+/*------------------- 6.6. Preloader -------------------*/
+@import 'vendor/preloader';
+
+
+
+/*=================================
+07. Theme Default
+==================================*/
+@import 'theme-default/global';
+
+
+/*=================================
+08. Template Style
+==================================*/
+
+/*------------------- 8.1. Headers  -------------------*/
+// Header Layout 1
+@import 'template/headers/header-v1';
+
+// Header Layout 2
+@import 'template/headers/header-v2';
+
+// Header Sticky
+@import 'template/headers/header-sticky';
+
+
+/*------------------- 8.2. Footers  -------------------*/
+// Footer Layout 1
+@import 'template/footers/footer-v1';
+
+
+/*------------------- 8.3. Widgets  -------------------*/
+// Sidebar Widget
+@import 'template/widgets/sidebar-widget';
+
+// Sidemenu Widget
+@import 'template/widgets/sidemenu-widget';
+
+
+
+
+/*------------------- 8.4. Breadcumb  -------------------*/
+// Breadcumb Layout 1
+@import 'template/breadcumb/breadcumb-v1';
+
+
+
+
+/*------------------- 8.5. Popup Search  -------------------*/
+// Popup Search Layout 1
+@import 'template/sections/popupsearch-v1';
+
+
+/*------------------- 8.6. Pagination  -------------------*/
+@import 'template/sections/pagination-v1';
+
+// Post Paginatino
+@import 'template/sections/post-paginaton-v1';
+
+
+
+
+/*------------------- 8.7. Popup Side Menu  -------------------*/
+// Side Menu layout 1
+@import 'template/sections/sidemenu-v1';
+
+
+
+
+/*------------------- 8.8. Hero Area  -------------------*/
+@import 'template/sections/hero';
+
+
+
+/*------------------- 8.9. About Us  -------------------*/
+// About Us Layout 1
+@import 'template/sections/about-v1';
+
+// About Us Layout 2
+@import 'template/sections/about-v2';
+
+// About Us Layout 3
+@import 'template/sections/about-v3';
+
+
+
+/*------------------- 8.10. Estimate Form  -------------------*/
+// Estimate Form Layout 1
+@import 'template/sections/estimate-form-v1';
+
+
+
+/*------------------- 8.11. Services  -------------------*/
+// Service Layout 1
+@import 'template/sections/services-v1';
+
+// Service Layout 2
+@import 'template/sections/services-v2';
+
+// Service Layout 3
+@import 'template/sections/services-v3';
+
+// Service Details Layout 1
+@import 'template/sections/service-details-v1';
+
+
+/*------------------- 8.12. Call To Action  -------------------*/
+// CTA Layout 1
+@import 'template/sections/cta-v1';
+
+
+/*------------------- 8.13. Work Process  -------------------*/
+// Work Process Layout 1
+@import 'template/sections/work-process-v1';
+
+// Work Process Layout 2
+@import 'template/sections/work-process-v2';
+
+// Work Process Layout 3
+@import 'template/sections/work-process-v3';
+
+
+/*------------------- 8.14. Appointment Form Area  -------------------*/
+// Appointment Form Layout 1
+@import 'template/sections/appointment-form-v1';
+
+// Appointment Form Layout 2
+@import 'template/sections/appointment-form-v2';
+
+
+/*------------------- 8.15. Testimonial  -------------------*/
+// Testimonial Layout 1
+@import 'template/sections/testimonial-v1';
+
+// Testimonial Layout 2
+@import 'template/sections/testimonial-v2';
+
+// Testimonial Layout 3
+@import 'template/sections/testimonial-v3';
+
+
+/*------------------- 8.16. Brand  -------------------*/
+// Brand Layout 1
+@import 'template/sections/brand-v1';
+
+// Brand Layout 2
+@import 'template/sections/brand-v2';
+
+
+/*------------------- 8.17. Projects  -------------------*/
+// Projects Layout 1
+@import 'template/sections/projects-v1';
+
+// Projects Layout 2
+@import 'template/sections/project-details-v1';
+
+
+/*------------------- 8.18. Blog  -------------------*/
+// Blog Layout 1 
+@import 'template/sections/blog-v1';
+
+// Blog Layout 2 
+@import 'template/sections/blog-v2';
+
+// Blog Layout 3 
+@import 'template/sections/blog-v3';
+
+// Blog Single Layout 3 
+@import 'template/sections/blog-single-v1';
+
+// Blog Details Layout 3 
+@import 'template/sections/blog-details-v1';
+
+
+/*------------------- 8.19. Subscribe Form  -------------------*/
+// Subscribe Form Layout 1 
+@import 'template/sections/subscribe-form-v1';
+
+
+/*------------------- 8.20. Counter Box  -------------------*/
+// Counter Box Layout 1
+@import 'template/sections/counter-v1';
+
+// Counter Box Layout 2
+@import 'template/sections/counter-v2';
+
+// Counter Box Layout 3
+@import 'template/sections/counter-v3';
+
+
+/*-------------------  8.21. Price Table  -------------------*/
+// Price Table Layout 1 
+@import 'template/sections/price-table-v1';
+
+
+/*------------------- 8.22. Divider  -------------------*/
+@import 'template/sections/divider';
+
+
+/*------------------- 8.23. Team  -------------------*/
+// Team Layout 1
+@import 'template/sections/team-v1';
+
+// Team Layout 2
+@import 'template/sections/team-v2';
+
+// Team Details
+@import 'template/sections/team-details-v1';
+
+
+
+
+/*------------------- 8.24. Features  -------------------*/
+// Features layout 1 
+@import 'template/sections/features-v1';
+
+// Features layout 2 
+@import 'template/sections/features-v2';
+
+
+/*------------------- 8.25. Contact Form  -------------------*/
+@import 'template/sections/contact-form-v1';
+
+// Sidebar Contact Form 
+@import 'template/sections/sidebar-contact-form';
+
+
+/*------------------- 8.26. Error  -------------------*/
+@import 'template/sections/error-v1';
+
+
+/*------------------- 8.27. FAQ  -------------------*/
+@import 'template/sections/faq-v1';
+
+
+/*------------------- 8.28. Google Map Wrap  -------------------*/
+.google-map-wrapper {
+    height: 670px;
+    width: 100%;
+
+    @include md {
+        height: 400px;
+    }
+
+    @include xs {
+        height: 300px;
+    }
+}
+
+/*------------------- 8.29. Branch Information Box  -------------------*/
+@import 'template/sections/branch-info-v1';
+
+
+/*------------------- 8.30. Comments  -------------------*/
+@import 'template/sections/blog-comments-v1';
+
+@import 'template/sections/comments-form-v1';
+
+
+
+/*------------------- 8.31. Target  -------------------*/
+@import 'template/sections/target-v1';
+
+
+/*------------------- 8.32. Our Values  -------------------*/
+@import 'template/sections/values-v1';
+
+/*------------------- 8.33. Shopping Cart  -------------------*/
+@import 'template/sections/cart';
+
+/*------------------- 8.34. Checkout  -------------------*/
+@import 'template/sections/checkout';
+
+/*------------------- 8.35. Shop  -------------------*/
+@import 'template/sections/shop-v1';
+@import 'template/sections/shop-details-v1';
+@import 'template/sections/shop-tab-v1';
+
+
+
+
+
+/*=================================
+09. Helper Classes
+==================================*/
+/*------------------- 9.1. Overlay  -------------------*/
+
+[data-overlay] {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+[data-overlay="primary"]::before {
+    background-color: $primary-color;
+}
+
+[data-overlay="primary2"]::before {
+    background-color: $primary-color2;
+}
+
+[data-overlay="primary3"]::before {
+    background-color: $primary-color3;
+}
+
+[data-overlay="secondary"]::before {
+    background-color: $secondary-color;
+}
+
+[data-overlay="secondary2"]::before {
+    background-color: $secondary-color2;
+}
+
+[data-overlay="secondary3"]::before {
+    background-color: $secondary-color3;
+}
+
+[data-overlay="titlecolor"]::before {
+    background-color: $titleColor;
+}
+
+[data-overlay="white"]::before {
+    background-color: #ffffff;
+}
+
+[data-overlay="black"]::before {
+    background-color: #000000;
+}
+
+[data-opacity="1"]::before {
+    opacity: 0.1;
+}
+
+[data-opacity="2"]::before {
+    opacity: 0.2;
+}
+
+[data-opacity="3"]::before {
+    opacity: 0.3;
+}
+
+[data-opacity="4"]::before {
+    opacity: 0.4;
+}
+
+[data-opacity="5"]::before {
+    opacity: 0.5;
+}
+
+[data-opacity="6"]::before {
+    opacity: 0.6;
+}
+
+[data-opacity="7"]::before {
+    opacity: 0.7;
+}
+
+[data-opacity="8"]::before {
+    opacity: 0.8;
+}
+
+[data-opacity="9"]::before {
+    opacity: 0.9;
+}
+
+/*------------------- 9.2. Border  -------------------*/
+.border-primary {
+    border-color: $primary-color !important;
+}
+
+.border-primary2 {
+    border-color: $primary-color2 !important;
+}
+
+.border-primary3 {
+    border-color: $primary-color3 !important;
+}
+
+.border-titlecolor {
+    border-color: $titleColor;
+}
+
+.top-minus-170 {
+    margin-top: -170px;
+}
+
+.mb-minus-15 {
+    margin-bottom: -15px;
+}
+
+
+/*=================================
+10. Theme Animation
+==================================*/
+@import 'animation/animation';
+
+
+
+/*=================================
+11. Extend
+==================================*/
+@import 'extend/extend';
+
+
+

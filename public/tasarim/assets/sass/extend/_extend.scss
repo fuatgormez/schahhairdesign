@@ -1,0 +1,203 @@
+// Bg Color Extend 
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.bg-primary2 {
+  background-color: $primary-color2;
+}
+
+.bg-primary3 {
+  background-color: $primary-color3;
+}
+
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+
+.bg-secondary2 {
+  background-color: $secondary-color2;
+}
+
+.bg-secondary3 {
+  background-color: $secondary-color3;
+}
+
+.bg-light {
+  background-color: $light-color !important;
+}
+
+.bg-white {
+  background-color: $white-color;
+}
+
+
+// Font Color Extend
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-primary2 {
+  color: $primary-color2;
+}
+
+.text-primary3 {
+  color: $primary-color3;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-title {
+  color: $titleColor;
+}
+
+.text-body {
+  color: $bColor;
+}
+
+
+// Font Extend
+.bodyfont {
+  font-family: $bodyFont;
+}
+
+.font1 {
+  font-family: $font1;
+}
+
+.font2 {
+  font-family: $font2;
+}
+
+.iconFont {
+  font-family: $iconFont;
+}
+
+.iconFont2 {
+  font-family: $iconFont2;
+}
+
+// Font Weight
+.font-light {
+  font-weight: 400;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+
+// Default Font Size 
+.text-xs {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.text-ml {
+  font-size: 28px;
+}
+
+.text-xl {
+  font-size: 32px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+
+// helpful Extend
+.background-image {
+  @include background-content(no-repeat, cover, center center);
+  &:before {
+    content: '';
+    position: absolute;
+  }
+
+}
+
+.bg-cover {
+  @include background-content(no-repeat, cover, center center);
+}
+
+.bg-100 {
+  @include background-content(no-repeat, 100% 100%, center center);
+}
+
+.bg-auto {
+  background-size: auto auto;
+}
+
+.bg-bottom {
+  background-position: center bottom;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.media-none {
+  display: none;
+}
+
+.transition {
+  @include transition(all ease 0.4s);
+}
+
+.translate-equal {
+  @include transform(translate(-50%, -50%));
+}
+
+.radius-circle {
+  @include border-radius(50%);
+}
+
+.radius-50 {
+  @include border-radius(50px);
+}
+
+.radius-10 {
+  @include border-radius(10px);
+}
+
+.radius-5 {
+  @include border-radius(5px);
+}
+
+
+.link-ovelay {
+  @include overlay(0,1);
+}
