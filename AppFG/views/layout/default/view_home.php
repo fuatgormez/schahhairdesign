@@ -14,7 +14,7 @@
                                                 <img src="img/demos/barber/bar.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" />
                                             </span>
                                         </h2>
-                                        <h1 class="text-color-light font-weight-extra-bold text-15 line-height-2 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1100" data-plugin-options="{'minWindowWidth': 0}">Willkommen bei Hair & Schahhairdesign</h1>
+                                        <h1 class="text-color-light font-weight-extra-bold text-12 line-height-2 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1100" data-plugin-options="{'minWindowWidth': 0}">Willkommen bei Hair & Schahhairdesign</h1>
                                         <p class="position-relative bg-primary text-color-light line-height-5 font-weight-light text-3 ls-0 py-2 px-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" data-plugin-options="{'minWindowWidth': 0}">
                                             <span class="position-absolute right-100pct top-50pct transform3dy-n50">
                                                 <span class="d-block custom-slider-dot bg-primary me-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1800" data-plugin-options="{'minWindowWidth': 0}"></span>
