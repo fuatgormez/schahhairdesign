@@ -43,6 +43,17 @@ class Contact extends CI_Controller {
 		$error = '';
 
 		if(isset($_POST)) {
+
+		$this->load->library('email');
+
+		$config['protocol']  = 'smtp';
+        $config['smtp_host'] = 'ssl://mail.schahhairdesign.de';
+        $config['smtp_user'] = 'info@schahhairdesign.de';
+        $config['smtp_pass'] = 'schahhairdesign123-';
+        $config['smtp_port'] =  465;//587;
+        $config['mailtype']  = 'html';
+               
+        $this->email->initialize($config);
 			
 			$valid = 1;
 
