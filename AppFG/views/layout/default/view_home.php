@@ -189,11 +189,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="custom-circle-pos-2 position-absolute z-index-1 bottom-0 right-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-plugin-options="{'accY': -600}">
-                        <svg height="456" width="456" class="svg-primary opacity-1 overflow-visible">
-                            <circle cx="228" cy="228" r="228" stroke="#CCC" stroke-width="12" fill="#CCC" />
-                        </svg>
-                    </div>
                 </section>
 
                 <section class="section section-parallax section-height-4 overlay overlay-show overlay-op-7 border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '129%'}" data-image-src="<?php echo base_url('public/layout/' . $theme . '/img/parallax-2-min.jpeg'); ?>">
