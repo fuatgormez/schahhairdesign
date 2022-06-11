@@ -95,7 +95,6 @@
 				</div>
 			</footer>
 		</div>
-
         <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
