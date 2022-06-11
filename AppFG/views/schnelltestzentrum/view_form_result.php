@@ -1,1 +1,0 @@
-sucess detaylar gelsin
