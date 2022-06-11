@@ -80,10 +80,10 @@
                                     <?php endforeach;?>
 								</ul>
 							</div>
-							<div class="col-9">
+							<div class="col-md-9 col-lg-9 col-sm-6">
 								<p class="text-color-light font-weight-light opacity-4 mb-0">© 2022 SCHAHHAIRDESIGN Alle Rechte vorbehalten.</p>
 							</div>
-							<div class="col-3">
+							<div class="col-md-3 col-lg-3 col-sm-6">
 								<p class="text-color-white font-weight-bold text-3 mb-0 ">
                                     <a href="#" class="getPage" data-page="impressum">Impressum</a>
                                     |
